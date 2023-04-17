@@ -1,0 +1,27 @@
+.btnBlock {
+    margin: 30px 0;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns {
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+    border: 2px solid black;
+    transition: 200ms;
+}
+
+.btns:hover {
+    background-color: #303030;
+    color: white;
+    transition: 200ms;
+}
+
+.btns:active {
+    transition: 200ms;
+    transform: scale(0.9);
+}

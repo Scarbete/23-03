@@ -1,0 +1,19 @@
+.textBox {
+    margin: 0 auto;
+}
+
+.textH1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.textSpan {
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    padding-bottom: 50px;
+    font-size: 20px;
+    color: #303030;
+    font-weight: bold;
+}
+
