@@ -1,0 +1,84 @@
+
+.todoCard {
+    width: 600px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 10px 10px 25px rgb(0,0,0,0.3);
+    margin-top: 25px;
+    border-radius: 8px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done {
+    background: lightgreen;
+}
+
+.Btn:active {
+    transform: scale(0.95);
+    transition: 150ms;
+}
+
+.todoButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.todoTitle {
+    width: 30%;
+}
+
+.editSave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.saveBtn {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 70px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.cancel {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 70px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.editBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.cancel:hover, .saveBtn:hover {
+    transform: translateY(3px);
+    transition: 150ms;
+}
