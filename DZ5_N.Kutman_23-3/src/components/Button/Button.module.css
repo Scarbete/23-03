@@ -1,0 +1,18 @@
+
+.button {
+    width: 260px;
+    height: 45px;
+    color: black;
+    border-radius:6px;
+    border: 2px solid #626262;
+    background-color: white;
+    transition: 200ms;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: lightblue;
+    transition: 200ms;
+    color: black;
+}
+

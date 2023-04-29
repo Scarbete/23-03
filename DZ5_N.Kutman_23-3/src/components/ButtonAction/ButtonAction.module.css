@@ -1,0 +1,53 @@
+
+.done {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 50px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 150ms;
+    font-size: 16px;
+}
+
+.delete {
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 50px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 150ms;
+    font-size: 22px;
+}
+
+.edit {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 50px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 150ms;
+    font-size: 17px;
+}
+
+.edit:active, .delete:active, .done:active {
+    transform: translateY(3px);
+    transition: 150ms;
+}
