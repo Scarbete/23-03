@@ -1,0 +1,114 @@
+@import './theme/dark.css';
+@import './theme/light.css';
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pokemonCard {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.pokemonCard:hover {
+     filter: contrast(1.1);
+}
+
+.pokemonCard:active {
+     filter: contrast(0.9);
+}
+
+.pokemonCard::before,
+.pokemonCard::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     border: 3px solid var(--border-color);
+     transition: all .5s;
+     animation: clippath 34s infinite linear;
+     border-radius: 10px;
+}
+
+.pokemonCard::after {
+     animation: clippath 34s infinite -17s linear;
+}
+
+@keyframes clippath { 0%,
+    100% {clip-path: inset(0 0 98% 0);}
+    25% {clip-path: inset(0 98% 0 0);}
+    50% {clip-path: inset(98% 0 0 0);}
+    75% {clip-path: inset(0 0 0 98%);}
+}
+
+.pokemonCard:hover {
+    transition: 200ms;
+    transform: scale(0.95);
+}
+
+.pokemonCard > img {
+    width: 150px;
+    height: 150px;
+}
+
+.pokemonList {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding-bottom: 60px;
+}
+
+.themeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    background: none;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    transition: 200ms;
+}
+
+.themeBtn:hover {
+    transform: translateY(3px);
+    transition: 200ms;
+}
+
+.pokemonName {
+    font-size: 24px;
+}
+
+.pokemonName:first-letter {
+    text-transform: uppercase;
+}
+
+.btnBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
